@@ -103,6 +103,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\BL.Ventas.Producto.datasource" />
+    <None Include="Properties\DataSources\BL.Ventas.ProductosBL.datasource" />
+    <None Include="Properties\DataSources\BL.Ventas.SeguridadBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngtree-vector-lock-icon-png-image_316863.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.Ventas\BL.Ventas.csproj">
+      <Project>{fe284b1e-8713-4bfb-ad9c-369acf655dbb}</Project>
+      <Name>BL.Ventas</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
